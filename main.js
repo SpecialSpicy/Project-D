@@ -55,7 +55,6 @@ let products = [
     },
     ];
     
-    // Render product cards
     function renderProducts() {
     const container = document.getElementById("content");
     container.innerHTML = "";
@@ -85,10 +84,10 @@ let products = [
     }
     }
     
-    // Selected product index
+
     let selectedProductIndex = null;
     
-    // Select a product
+
     function selectProduct(index) {
     selectedProductIndex = index;
     const selectedProduct = products[index];
@@ -100,7 +99,7 @@ let products = [
     renderProducts();
     }
     
-    // Update product details
+
     function updateProduct() {
     if (selectedProductIndex !== null) {
         const nameInput = document.getElementById("input-name").value;
@@ -111,7 +110,7 @@ let products = [
         products[selectedProductIndex].id = idInput;
         products[selectedProductIndex].price = priceInput;
         
-        // Update the product card with the new details
+
         const selectedCard = document.getElementsByClassName("product-card selected")[0];
         const selectedProduct = products[selectedProductIndex];
         selectedCard.innerHTML = `
@@ -123,12 +122,11 @@ let products = [
         <p>Rating: ${selectedProduct.rating}</p>
         `;
         
-        // Store the updated product data in localStorage
         localStorage.setItem("products", JSON.stringify(products));
     }
     }
     
-    // Load product data from localStorage
+
     function loadProductData() {
     const storedProducts = localStorage.getItem("products");
     if (storedProducts) {
@@ -137,6 +135,5 @@ let products = [
     }
     }
     
-    // Initial rendering and data loading
     renderProducts();
     loadProductData();
