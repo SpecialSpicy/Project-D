@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="SpecialSpicy">
+        <meta name="keywords" content="HTML, Gintama, Anime">
+        <meta name="description" content="Gintama Ranbu Website, made by SpecialSpicy">
+        <link rel="icon" type="image/x-icon" href="assets\Logos\favicon.ico">
+        <title>NobleKeys</title>
+         
+        <style>
+            #content {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                max-width: 1920px;
+                margin: 0 auto;
+                margin-top: 10vh;
+              }
+        
+              .product-card {
+
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                border-radius: 30px;
+              }
+              
+              .product-card.selected {
+                background-color: #330036;
+              }
+              
+              .product-card input[type="text"] {
+                width: 60px;
+              }
+              
+              #product-container {
+                margin-bottom: 20px;
+              }
+              
+              #master-input {
+                margin-bottom: 10px;
+              }
+          </style>
+
+    </head>
+                
+    <body>
+        <div class="header" id="desktop-nav">
+          <a href="index.html"><img class="logo" id="logo" src="assets\Logos\logo.png"></a>
+          <ul>
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="index2.html">Keyboards</a></li>
+            <li class="items"><a href="index3.html">Contact</a></li>
+          </ul>
+        
+          </div>
+
+            <nav id="mobile-nav">
+              <div>
+                <img src="assets\Logos\logo.png" alt="logo" id="logo">
+              </div>
+              
+              <ul transition:slide>
+                <a href="index.html">Home</a>
+                <a href="index2.html">Sneakers</a>
+                <a href="index3.html">Contact</a>
+              </ul>
+
+            </nav>
+
+            <body>
+                
+                <div id="master-input">
+                  <input type="text" id="input-name" placeholder="Product Name">
+                  <input type="text" id="input-id" placeholder="Product ID">
+                  <input type="text" id="input-price" placeholder="Product Price">
+                  <button onclick="updateProduct()">Update</button>
+                </div>
+                
+                <div id="content"></div>
+                
+            
+    <script src="main.js">
+    </script>
+    </body>
+        </html>
