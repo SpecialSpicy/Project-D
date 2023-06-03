@@ -2,7 +2,7 @@
 
 ### ! NOTE 
 
-### Right now the Nav Bar is not working. I will fix this in a minute!
+### Right now the Nav Bar is not working. I will fix this in the future!
 
 ### This is a Website that lets you configure your prices, ids and names. With an easy method to overwrite any directory or etc. for your images or your prices in the Javascript file. I will be updating this Repository furthermore with a Start Page and more features including a commented version of the Javascript file to make it easier to understand!
 
